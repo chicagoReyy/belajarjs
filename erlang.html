@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <h1>Parent Element</h1>
+        <p>Child 1</p>
+        <p>Child 2</p>
+    </div>
+
+    <script>
+        const parent = document.getElementById("parent");
+
+        // Parent access
+        console.log("Parent node Name :", parent.parentNode.nodeName);
+
+        // Child access
+        console.log("All Child Nodes :", parent.childNodes);
+        console.log("Only Element Children :", parent.children);
+        console.log("First Child :", parent.firstChild);
+        console.log("First Element Child :", parent.firstElementChild);
+    </script>
+</body>
+</html>
